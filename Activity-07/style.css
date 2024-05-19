@@ -1,0 +1,26 @@
+/* Styling for the body */
+body {
+    background-color: hsl(90, 90%, 94%);
+    margin: 0 auto;
+    max-width: 1200px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Styling for the header */
+header {
+    background-color: black;
+    color: #F30652;
+    text-align: center;
+}
+
+/* Styling for the image in the section */
+section img {
+    border-radius: 15px;
+}
+
+/* Styling for the footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
