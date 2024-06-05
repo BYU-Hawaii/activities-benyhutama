@@ -1,0 +1,63 @@
+body {
+    background-color: hsl(90, 90%, 94%);
+    margin: 0 auto;
+    max-width: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+header {
+    background-color: black;
+    color: #F30652;
+    text-align: center;
+    padding: 20px;
+}
+
+section img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+}
+
+/* Media queries for larger screens */
+@media (min-width: 768px) {
+    body {
+        font-size: 20px;
+    }
+
+    button {
+        padding: 15px 30px;
+        font-size: 20px;
+    }
+
+    section img {
+        width: 80%;
+    }
+}
+
+@media (min-width: 1024px) {
+    body {
+        font-size: 22px;
+    }
+
+    button {
+        padding: 20px 40px;
+        font-size: 24px;
+    }
+
+    section img {
+        width: 60%;
+    }
+}
