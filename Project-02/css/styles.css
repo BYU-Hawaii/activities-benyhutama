@@ -1,0 +1,162 @@
+@font-face {
+    font-family: 'Pacifico';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Pacifico Regular'), local('Pacifico-Regular'), url(https://fonts.gstatic.com/s/pacifico/v17/FwZY7-Qmy14u9lezJ-6H6MmBp0u-.woff2) format('woff2');
+    font-display: swap;
+}
+
+/* Basic styles for all devices */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('../images/background.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    color: #333;
+}
+
+header {
+    background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+    color: white;
+    text-align: center;
+    padding: 1.5em 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: 'Pacifico', cursive;
+    font-size: 2.5em;
+    border-bottom: 1px solid #ff77a9;
+}
+
+nav {
+    background: linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%);
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-weight: 500;
+}
+
+nav ul li a:hover {
+    background-color: #ff77a9;
+    transform: scale(1.1);
+}
+
+section {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    margin: 20px auto;
+    border-radius: 10px;
+    max-width: 1200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 4rem; 
+}
+
+footer {
+    background: rgba(255, 255, 255, 0.8); 
+    color: #333; 
+    text-align: center;
+    padding: 10px 0;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    font-family: 'Pacifico', cursive;
+    font-size: 1.5em;
+    border-top: 1px solid rgba(255, 255, 255, 0.5); 
+}
+
+figure {
+    margin: 20px 0;
+    text-align: center;
+}
+
+figure img {
+    width: 100%;
+    max-width: 650px;
+    height: auto;
+    display: inline-block;
+    border: 2px solid #c70039;
+    border-radius: 8px;
+}
+
+figcaption {
+    margin-top: 8px;
+    text-align: center;
+    font-style: italic;
+    color: #555;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+ul li::marker {
+    color: #ff5733;
+    font-size: 1.5em;
+}
+
+.float-left {
+    float: left;
+    margin: 0 20px 20px 0;
+    width: 45%;
+}
+
+.float-right {
+    float: right;
+    margin: 0 0 20px 20px;
+    width: 45%;
+}
+
+/* For screens wider than 768px */
+@media (min-width: 768px) {
+    nav ul {
+        flex-direction: row;
+    }
+
+    nav ul li a {
+        border-right: 1px solid #555;
+    }
+
+    nav ul li:last-child a {
+        border-right: none;
+    }
+
+    section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+}
+
+/* For screens wider than 1024px */
+@media (min-width: 1024px) {
+    section {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
