@@ -26,7 +26,7 @@ document.getElementById('registrationForm').addEventListener('submit', function(
     if (formValid) {
         document.getElementById('registrationFeedback').textContent = 'Your user registration was accepted!';
         document.getElementById('registrationFeedback').style.display = 'block';
-        // Here you can also handle the form submission, e.g. send data to the server
+        
     } else {
         document.getElementById('registrationFeedback').textContent = '';
         document.getElementById('registrationFeedback').style.display = 'none';
