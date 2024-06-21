@@ -26,6 +26,7 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
+    flex-wrap: wrap;
 }
 
 nav ul li {
@@ -97,7 +98,7 @@ nav ul li a {
     background-color: #9575CD;
     padding: 25px;
     margin: 10px;
-    flex: 1 1 calc(50% - 40px);
+    flex: 1 1 calc(100% - 40px);
     box-sizing: border-box;
     border: 3px solid #B39DDB;
     cursor: pointer;
@@ -107,6 +108,8 @@ nav ul li a {
     text-shadow: 1px 1px #512DA8;
     border-radius: 10px;
     transition: transform 0.3s ease, background-color 0.3s ease;
+    text-align: center;
+    text-decoration: none;
 }
 
 .genre:hover {
@@ -157,7 +160,7 @@ footer {
     background-color: #9575CD;
     padding: 25px;
     margin: 10px;
-    flex: 1 1 calc(33.333% - 40px);
+    flex: 1 1 calc(100% - 40px);
     box-sizing: border-box;
     border: 3px solid #B39DDB;
     font-size: 1.2em;
@@ -227,11 +230,11 @@ footer {
     }
 
     .genre {
-        flex: 1 1 calc(33.333% - 40px);
+        flex: 1 1 calc(45% - 40px);
     }
 
     .game {
-        flex: 1 1 calc(33.333% - 40px);
+        flex: 1 1 calc(45% - 40px);
     }
 }
 
@@ -245,11 +248,11 @@ footer {
     }
 
     .genre {
-        flex: 1 1 calc(25% - 40px);
+        flex: 1 1 calc(22% - 40px);
     }
 
     .game {
-        flex: 1 1 calc(25% - 40px);
+        flex: 1 1 calc(22% - 40px);
     }
 }
 
