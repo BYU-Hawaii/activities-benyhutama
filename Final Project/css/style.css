@@ -121,20 +121,20 @@ footer {
     color: white;
 }
 
-.about {
+.about, .genre-detail, .feedback {
     padding: 30px 20px;
     text-align: center;
     background-color: #311B92;
 }
 
-.about h1 {
+.about h1, .genre-detail h1, .feedback h1 {
     font-size: 2.5em;
     margin-bottom: 20px;
     color: #E1BEE7;
     text-shadow: 2px 2px #7B1FA2;
 }
 
-.about p {
+.about p, .genre-detail p, .feedback p {
     font-size: 1.2em;
     margin-bottom: 20px;
     color: #D1C4E9;
@@ -145,6 +145,75 @@ footer {
     height: auto;
     border-radius: 10px;
     box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+.game-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.game {
+    background-color: #9575CD;
+    padding: 25px;
+    margin: 10px;
+    flex: 1 1 calc(33.333% - 40px);
+    box-sizing: border-box;
+    border: 3px solid #B39DDB;
+    font-size: 1.2em;
+    color: #EDE7F6;
+    text-align: center;
+    border-radius: 10px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.game img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.game h2 {
+    margin-bottom: 10px;
+}
+
+.feedback form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.feedback label {
+    display: block;
+    margin-top: 10px;
+}
+
+.feedback input, .feedback textarea, .feedback select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #B39DDB;
+    background-color: #512DA8;
+    color: #E1BEE7;
+}
+
+.feedback input::placeholder, .feedback textarea::placeholder {
+    color: #D1C4E9;
+}
+
+.feedback button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #7B1FA2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.feedback button:hover {
+    background-color: #4A148C;
 }
 
 /* Responsive design for larger screens */
@@ -158,6 +227,10 @@ footer {
     }
 
     .genre {
+        flex: 1 1 calc(33.333% - 40px);
+    }
+
+    .game {
         flex: 1 1 calc(33.333% - 40px);
     }
 }
@@ -174,4 +247,9 @@ footer {
     .genre {
         flex: 1 1 calc(25% - 40px);
     }
+
+    .game {
+        flex: 1 1 calc(25% - 40px);
+    }
 }
+
