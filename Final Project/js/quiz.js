@@ -46,7 +46,7 @@ const questions = [
     },
     {
         question: "What genre is League of Legends?",
-        image: "images/leagueoflegends.jpg",
+        image: "images/lol.jpg",
         answers: [
             { text: "FPS", correct: false },
             { text: "MOBA", correct: true },
@@ -64,7 +64,7 @@ const questions = [
     },
     {
         question: "What genre is Rainbow Six Siege?",
-        image: "images/rainbowsixsiege.jpg",
+        image: "images/rainbow6s.jpg",
         answers: [
             { text: "FPS", correct: true },
             { text: "MOBA", correct: false },
