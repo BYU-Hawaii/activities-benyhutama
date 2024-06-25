@@ -147,26 +147,26 @@ footer {
     box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
 }
 
-.fps, .moba {
+.fps, .moba, .battle_royale {
     padding: 30px 20px;
     text-align: center;
     background-color: #311B92;
 }
 
-.fps h1, .moba h1 {
+.fps h1, .moba h1, .battle_royale h1 {
     font-size: 2.5em;
     margin-bottom: 20px;
     color: #E1BEE7;
     text-shadow: 2px 2px #7B1FA2;
 }
 
-.fps .game-list, .moba .game-list {
+.fps .game-list, .moba .game-list, .battle_royale .game-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.fps .game, .moba .game {
+.fps .game, .moba .game, .battle_royale .game {
     background-color: #512DA8;
     padding: 20px;
     margin: 10px;
@@ -178,18 +178,18 @@ footer {
     text-align: center;
 }
 
-.fps .game img, .moba .game img {
+.fps .game img, .moba .game img, .battle_royale .game img {
     max-width: 100%;
     height: auto;
     border-radius: 10px;
 }
 
-.fps .game:hover, .moba .game:hover {
+.fps .game:hover, .moba .game:hover, .battle_royale .game:hover {
     transform: scale(1.05);
     background-color: #7E57C2;
 }
 
-.fps .game h2, .moba .game h2 {
+.fps .game h2, .moba .game h2, .battle_royale .game h2 {
     font-size: 1.5em;
     color: #EDE7F6;
     margin: 10px 0;
@@ -234,75 +234,41 @@ footer {
     color: #E1BEE7;
 }
 
-.feedback input::placeholder, .feedback textarea::placeholder {
-    color: #D1C4E9;
-}
-
 .feedback button {
     margin-top: 20px;
-    padding: 10px 20px;
+    padding: 12px 25px;
+    font-size: 1.2em;
     background-color: #7B1FA2;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
 }
 
 .feedback button:hover {
     background-color: #4A148C;
 }
 
-/* Responsive design for larger screens */
-@media (min-width: 768px) {
-    .hero h1 {
-        font-size: 3em;
-    }
-
-    .hero p {
-        font-size: 1.4em;
+/* Responsive styles */
+@media (max-width: 768px) {
+    .genre-list {
+        flex-direction: column;
     }
 
     .genre {
-        flex: 1 1 calc(33.333% - 40px);
+        flex: 1 1 100%;
     }
 
-    .fps .game, .moba .game {
-        flex: 1 1 calc(33.333% - 40px);
+    .game-list {
+        flex-direction: column;
     }
 
-    .feedback h1 {
-        font-size: 3em;
-    }
-
-    .feedback form {
-        padding: 30px;
+    .game {
+        flex: 1 1 100%;
     }
 }
 
-@media (min-width: 1024px) {
-    .hero h1 {
-        font-size: 3.5em;
-    }
-
-    .hero p {
-        font-size: 1.6em;
-    }
-
-    .genre {
-        flex: 1 1 calc(25% - 40px);
-    }
-
-    .fps .game, .moba .game {
-        flex: 1 1 calc(25% - 40px);
-    }
-
-    .feedback h1 {
-        font-size: 3.5em;
-    }
-
-    .feedback form {
-        padding: 40px;
-    }
-}
 
 

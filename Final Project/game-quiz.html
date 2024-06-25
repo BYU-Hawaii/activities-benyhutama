@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MOBA Games - GameZone</title>
+    <title>GameZone Quiz</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -14,38 +14,30 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="games.html">Games</a></li>
-                <li><a href="fps.html">FPS</a></li>
-                <li><a href="moba.html">MOBA</a></li>
-                <li><a href="battle_royale.html">Battle Royale</a></li>
                 <li><a href="feedback.html">Feedback</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section class="moba">
-            <h1>MOBA Games</h1>
-            <div class="game-list">
-                <div class="game">
-                    <img src="images/dota2.jpg" alt="Dota 2">
-                    <h2>Dota 2</h2>
+        <section class="game-quiz">
+            <h1>Game Genre Quiz</h1>
+            <div id="quiz-container">
+                <div id="question-container">
+                    <div id="question">Question text</div>
+                    <img id="game-image" src="" alt="Game Image" />
                 </div>
-                <div class="game">
-                    <img src="images/lol.jpg" alt="League of Legends">
-                    <h2>League of Legends</h2>
+                <div id="answer-buttons" class="btn-container">
+                    <!-- Answer buttons will be generated here -->
                 </div>
-                <div class="game">
-                    <img src="images/mobilelegends.jpg" alt="Mobile Legends">
-                    <h2>Mobile Legends</h2>
-                </div>
+                <button id="next-button" class="btn">Next</button>
             </div>
+            <div id="result-container"></div>
         </section>
     </main>
     <footer>
         <p>Contact us: benyhutama16@go.byuh.edu // +1 808-620-4250</p>
         <p>Follow us on social media!</p>
     </footer>
+    <script src="js/quiz.js"></script>
 </body>
 </html>
-
-
-
