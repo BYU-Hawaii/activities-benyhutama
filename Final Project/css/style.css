@@ -1,3 +1,4 @@
+/* General styling for all pages */
 body {
     font-family: 'Comic Sans MS', 'Comic Sans', cursive;
     margin: 0;
@@ -251,8 +252,113 @@ footer {
     background-color: #4A148C;
 }
 
+/* Game quiz page styles */
+.game-quiz {
+    padding: 30px 20px;
+    text-align: center;
+    background-color: #311B92;
+}
+
+.game-quiz h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #E1BEE7;
+    text-shadow: 2px 2px #7B1FA2;
+}
+
+#quiz-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #512DA8;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+#question-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+#question {
+    font-size: 1.5em;
+}
+
+#game-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+#answer-buttons {
+    display: grid;
+    gap: 10px;
+}
+
+#answer-buttons .btn {
+    padding: 10px;
+    background-color: #7B1FA2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#answer-buttons .btn:hover {
+    background-color: #4A148C;
+}
+
+#result-container {
+    margin-top: 20px;
+}
+
+#next-button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: #7B1FA2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+#next-button:hover {
+    background-color: #4A148C;
+}
+
+/* Status classes */
+.correct {
+    background-color: #4CAF50 !important;
+}
+
+.wrong {
+    background-color: #F44336 !important;
+}
+
 /* Responsive styles */
-@media (max-width: 768px) {
+@media (min-width: 600px) {
+    #quiz-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #question-container {
+        grid-template-columns: 1fr;
+    }
+
+    #answer-buttons {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 768px) {
     .genre-list {
         flex-direction: column;
     }
@@ -269,6 +375,7 @@ footer {
         flex: 1 1 100%;
     }
 }
+
 
 
 
